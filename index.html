@@ -26,10 +26,7 @@
       </nav>
     </header>
     <main>
-      <form
-        method="post"
-        action="https://freecodecamp.org/practice-project/accessibility-quiz"
-      >
+      <form method="GET" action="mailto:helena.gilja@gmail.com" name="subject">
         <section role="region" aria-labelledby="student-info">
           <h2 id="student-info">Student Info</h2>
           <div class="info">
@@ -100,7 +97,9 @@
           <h2 id="css-questions">CSS</h2>
           <div class="formrow">
             <div class="question-block">
-              <label for="customer">Are you a frontend developer?</label>
+              <label class="question" for="customer"
+                >Are you a frontend developer?</label
+              >
             </div>
             <div class="answer">
               <select name="customer" id="customer" required>
@@ -123,16 +122,12 @@
             </div>
           </div>
         </section>
-        <button type="submit">Submit</button>
+        <button type="submit" value="send">Submit</button>
       </form>
     </main>
     <footer>
-      <address>
-        <a href="https://freecodecamp.org">freeCodeCamp</a><br />
-        San Francisco<br />
-        California<br />
-        USA
-      </address>
+      <span>Created with 💖 </span>
+      <a href="https://freecodecamp.org">freeCodeCamp </a>
     </footer>
   </body>
 </html>

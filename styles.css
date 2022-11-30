@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #f5f6f7;
+  background: white;
   color: #1b1b32;
   font-family: Helvetica;
   margin: 0;
@@ -14,7 +14,7 @@ body {
 header {
   width: 100%;
   height: 50px;
-  background-color: #1b1b32;
+  background-color: #2a2a40;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,8 +30,8 @@ header {
 }
 
 h1 {
-  color: #f1be32;
-  font-size: min(5vw, 1.2em);
+  color: #3bf132;
+  font-size: min(5vw, 1.6em);
   text-align: center;
 }
 
@@ -39,6 +39,7 @@ nav {
   width: 50%;
   max-width: 300px;
   height: 50px;
+  padding: 10px;
 }
 
 nav > ul {
@@ -52,15 +53,15 @@ nav > ul {
 }
 
 nav > ul > li {
-  color: #dfdfe2;
+  color: #3bf132;
   margin: 0 0.2rem;
   padding: 0.2rem;
   display: block;
 }
 
 nav > ul > li:hover {
-  background-color: #dfdfe2;
-  color: #1b1b32;
+  background-color: #f7f3f6;
+  color: #0a0a23;
   cursor: pointer;
 }
 
@@ -103,6 +104,10 @@ input {
   font-size: 16px;
 }
 
+.question {
+  margin-bottom: 10px;
+}
+
 .info label,
 .info input {
   display: inline-block;
@@ -137,9 +142,8 @@ p::before {
   content: "Question #";
 }
 
-.question {
-  border: none;
-  padding-bottom: 0;
+.answer {
+  margin-top: 10px;
 }
 
 .answers-list {
@@ -155,12 +159,17 @@ button {
   font-size: 23px;
   background: #d0d0d5;
   border: 3px solid #3b3b4f;
+  cursor: pointer;
 }
 
 footer {
   background-color: #2a2a40;
   display: flex;
-  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
 }
 
 footer,
@@ -168,9 +177,8 @@ footer a {
   color: #dfdfe2;
 }
 
-address {
-  text-align: center;
-  padding: 0.3em;
+span {
+  font-size: 1.2rem;
 }
 
 .sr-only {
